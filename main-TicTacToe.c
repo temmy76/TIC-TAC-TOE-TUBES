@@ -99,9 +99,9 @@ int papan[8][8];
 HighscoreData data;
 
 int main(){
-	system("cls");
 	int pilihmenu;
 menu :
+		system("cls");
 		printf("========TIC TAC TOE========\n");
 		printf("1. Start Game!\n");
 		printf("2. Score History\n");
@@ -120,10 +120,19 @@ menu :
 				scoreHistory();
 				break;
 			case 3:
+				system("cls");
 				printf("pending bantuan singkat");
+				system("pause");
+				goto menu;
 				break;
 			case 4:
-				printf("pending credit");
+				system("cls");
+				printf("Temmy Mahesa Ridwan - 201524062\n");
+				printf("Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051\n");
+				printf("D4 - Teknik Informatika\n");
+				printf("JTK 2020/2021");
+				system("pause");
+				goto menu;
 				break;
 			case 5:
 				printf("Yaah.. mau keluar permainan ya :(");
