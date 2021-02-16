@@ -1,4 +1,4 @@
-	#include<stdio.h>
+#include<stdio.h>
 #include<stdbool.h>
 #include<string.h>
 #include<time.h>
@@ -121,7 +121,11 @@ menu :
 				break;
 			case 3:
 				system("cls");
-				printf("pending bantuan singkat");
+				printf("1. untuk memulai permainan \n");
+				printf("2. untuk melihat data permainan yang terakhir di mainkan \n");
+				printf("3. halaman ini yang sedang kau baca \n");
+				printf("4. membuka halaman credit \n");
+				printf("5. gtfo \n");
 				system("pause");
 				goto menu;
 				break;
