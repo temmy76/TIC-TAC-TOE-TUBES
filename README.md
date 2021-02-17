@@ -59,5 +59,5 @@ Setelah dicompile dan dijalankan programnya lalu akan ada tampilan Menu dan laku
 
 
 #### Credit :
- Temmy Mahesa Ridwan - 201524062
- Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051
+ - Temmy Mahesa Ridwan - 201524062
+ - Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051
