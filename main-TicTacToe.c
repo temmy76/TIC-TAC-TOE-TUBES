@@ -13,7 +13,7 @@
 
 #define HIGHSCORE_FILENAME "scorehistory.dat"
 
-/* modul menu
+/* Modul Menu
 Author : Temmy Mahesa Ridwan
 */
 void pilihGrid();
@@ -24,7 +24,7 @@ void playTicTacToe();
 void namaPermainan();
 void scoreHistory();
 
-/*grid tic tac toe
+/*Modul Grid tic tac toe
 Author : Temmy Mahesa Ridwan
 */
 void grid3();
@@ -34,7 +34,7 @@ void grid7();
 void persiapanGrid();
 void tampilkanGrid();
 
-/*bila melawan komputer
+/*Modul apabila melawan komputer
 Author : Temmy Mahesa Ridwan
 */
 void gridCOM3();
@@ -46,7 +46,7 @@ void mudah(int x, int y);
 void sedang();
 void sulit();
 
-/* bila melawan player
+/*Modul apabila melawan player
 Author : Temmy Mahesa Ridwan
 */
 void gridVS3();
@@ -56,14 +56,14 @@ void gridVS7();
 void pemain1(int *i, int *j);
 void pemain2(int i, int j);
 
-/*proses ronde
+/*Modul proses ronde
 Author : Temmy Mahesa Ridwan
 */
 void giliran1();
 void giliran2();
 void giliran3();
 
-/*cek kolom, baris, diagonal agar computer tidak memiliki bug seperti menempatkan tanda ditempat yang sama*/
+/*Modul cek kolom, baris, diagonal agar computer tidak memiliki bug seperti menempatkan tanda ditempat yang sama*/
 /*Author : Temmy Mahesa RIdawn*/
 void barKos(int *i, int *j);
 void kolKos(int *i, int *j);
