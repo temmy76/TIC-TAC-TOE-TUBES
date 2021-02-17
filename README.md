@@ -8,10 +8,19 @@ Pemain bisa memilih apakah mau bermain dengan temang atau bisa juga bermain solo
 ### Papan TIC TAC TOE
 Papan TIC TAC TOE pada dasarnya hanya 3 x 3, tetapi TIC TAC TOE juga memiliki berbagai macam Papan yaitu 3 x 3, 5 x 5, 7 x 7, dan seterusnya, bisa dilihat Gambar Papan TIC TAC TOE dibawah
 
-![Papan TIC TAC TOE](https://i.imgur.com/sFDys37.png)
-![Papan TIC TAC TOE](https://i.imgur.com/kyT9rib.png)
-![Papan TIC TAC TOE](https://i.imgur.com/6FNKaw1.png)
+#### Papan 3 x 3
+![Papan TIC TAC TOE](https://i.imgur.com/xJ7ox14.png)
 
+#### Papan 5 x 5
+![Papan TIC TAC TOE](https://i.imgur.com/ENtg10h.png)
+
+#### Papan 7 x 7
+![Papan TIC TAC TOE](https://i.imgur.com/RpYnV0c.png)
+
+### Peraturan Bermain TIC TAC TOE
+Di awal permainan, pemain dihadapi lawan (mau player ataupun computer) setiap pemainnya akan diberikan Simbol atau Tanda sepetri  X atau O. Apabila di papan ada kolom yang sudah diisi, maka player lain tidak bisa menimpanya begitu saja, akan ada peringatan apabila player menempatkan tanda di kolom yang sudah terisi. 
+
+Setiap gilirannya akan diberikan waktu 10 detik untuk mengisi 1 kolom, apabila dalam 10 detik tersebut player tidak memasukan tanda di papan, maka gilirannya tersebut akan di berikan kepada lawan pemain. Permainan TIC TAC TOE disini memakai sistem ronde untuk memenangi pertandingan.
  
 HOW TO PLAY ! :
 
