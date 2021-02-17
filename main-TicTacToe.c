@@ -11,7 +11,7 @@
 #include<stdlib.h>
 #include<windows.h>
 
-#define HIGHSCORE_FILENAME "highscore.dat"
+#define HIGHSCORE_FILENAME "scorehistory.dat"
 
 /* modul menu
 Author : Temmy Mahesa Ridwan
