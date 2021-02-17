@@ -33,7 +33,7 @@ Permainan akan berakhir setelah ada yang memenangi permainan sebanyak ronde perm
 
 #### Kondisi Game Over
  1. Player 1 Menang bila mendapatkan 1 baris secara horizontal, vertikal, atau diagonal lebih cepat dari lawanya.
- 2. Computer(Player 2) Menang  bila Player Kalah cepat mendapatkan 1 baris secara horizontal, vertikal, atau diagonal.
+ 2. Computer(Player 2) Menang bila Player 1 Kalah cepat mendapatkan 1 baris secara horizontal, vertikal, atau diagonal.
  
 ## HOW TO PLAY ! :
 
