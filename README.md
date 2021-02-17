@@ -10,14 +10,17 @@ Papan TIC TAC TOE pada dasarnya hanya 3 x 3, tetapi TIC TAC TOE juga memiliki be
 
 #### Papan 3 x 3
 ![Papan TIC TAC TOE](https://i.imgur.com/xJ7ox14.png)
+
 (Made by Mochammad Daffa Faqiha Fawwaz Hanjowo)
 
 #### Papan 5 x 5
 ![Papan TIC TAC TOE](https://i.imgur.com/ENtg10h.png)
+
 (Made by Mochammad Daffa Faqiha Fawwaz Hanjowo)
 
 #### Papan 7 x 7
 ![Papan TIC TAC TOE](https://i.imgur.com/RpYnV0c.png)
+
 (Made by Mochammad Daffa Faqiha Fawwaz Hanjowo)
 
 ### Peraturan Bermain TIC TAC TOE
@@ -42,7 +45,7 @@ Pertama tama kalian harus memiliki text editor atau bisa langsung menggunakan ID
  4. Buka Source Code TIC TAC TOE.
  5. Compile Program + Run (F11).
 
-Setelah dicompile lalu akan ada tampilan Menu dan lakukan langkah - langkah ini:
+Setelah dicompile dan dijalankan programnya lalu akan ada tampilan Menu dan lakukan langkah - langkah ini:
 
  1. bila langsung mau bermain langsung masukan inputan ‘1’
  2. disini kalian diberi kesempatan untuk menamai permainan kalian
