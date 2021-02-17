@@ -1,4 +1,4 @@
-# TIC-TAC-TOE
+# TIC TAC TOE
 Tic Tac Toe (juga dikenal sebagai noughts and crosses atau Xs dan Os) adalah permainan kertas dan pensil untuk dua pemain, X dan O, yang bergiliran menandai ruang dalam grid 3x3. pemain yang berhasil menempatkan tiga tanda mereka di baris horizontal, vertikal, atau diagonal akan memenangkan pertandingan.
 
 ## Game Design
@@ -58,7 +58,6 @@ Setelah dicompile dan dijalankan programnya lalu akan ada tampilan Menu dan laku
  9. apabila bermain kembali kalian langsung ditujukan ke pemilihan grid
 
 
-#### credit :
+#### Credit :
  Temmy Mahesa Ridwan - 201524062
- 
  Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051
