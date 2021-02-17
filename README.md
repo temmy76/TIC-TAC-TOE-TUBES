@@ -1,6 +1,18 @@
-# TIC-TAC-TOE-TUBES
-Source Code Tic Tac Toe tubes 2021 kelompok 1
+# TIC-TAC-TOE
+Tic Tac Toe (juga dikenal sebagai noughts and crosses atau Xs dan Os) adalah permainan kertas dan pensil untuk dua pemain, X dan O, yang bergiliran menandai ruang dalam grid 3x3. pemain yang berhasil menempatkan tiga tanda mereka di baris horizontal, vertikal, atau diagonal akan memenangkan pertandingan.
 
+## Game Design
+### Player
+Pemain bisa memilih apakah mau bermain dengan temang atau bisa juga bermain solo dengan Computer, Computer juga memiliki 3 tingkat kesulitan yaitu mudah, sedang, dan sulit.
+
+### Papan TIC TAC TOE
+Papan TIC TAC TOE pada dasarnya hanya 3 x 3, tetapi TIC TAC TOE juga memiliki berbagai macam Papan yaitu 3 x 3, 5 x 5, 7 x 7, dan seterusnya, bisa dilihat Gambar Papan TIC TAC TOE dibawah
+
+![Papan TIC TAC TOE](https://i.imgur.com/sFDys37.png)
+![Papan TIC TAC TOE](https://i.imgur.com/kyT9rib.png)
+![Papan TIC TAC TOE](https://i.imgur.com/6FNKaw1.png)
+
+ 
 HOW TO PLAY ! :
 
 1. bila langsung mau bermain langsung masukan inputan ‘1’
