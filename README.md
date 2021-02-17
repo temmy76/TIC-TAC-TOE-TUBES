@@ -58,8 +58,7 @@ Setelah dicompile dan dijalankan programnya lalu akan ada tampilan Menu dan laku
  9. apabila bermain kembali kalian langsung ditujukan ke pemilihan grid
 
 
-## credit :
+### credit :
 
-### Temmy Mahesa Ridwan - 201524062
-
-### Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051
+#### Temmy Mahesa Ridwan - 201524062
+#### Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051
