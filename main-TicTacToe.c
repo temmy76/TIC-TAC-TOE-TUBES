@@ -1,3 +1,9 @@
+/* TIC TAC TOE GAME
+	Contributor :
+	- Mochammad Daffa Faqiha Fawwaz Hanjowo - 201524051
+	- Temmy Mahesa Ridwan - 201524062
+*/
+
 #include<stdio.h>
 #include<stdbool.h>
 #include<string.h>
@@ -7,7 +13,9 @@
 
 #define HIGHSCORE_FILENAME "highscore.dat"
 
-/* modul menu*/
+/* modul menu
+Author : Temmy Mahesa Ridwan
+*/
 void pilihGrid();
 void pilihMode();
 void pilihLevel();
@@ -16,17 +24,31 @@ void playTicTacToe();
 void namaPermainan();
 void scoreHistory();
 
-/*grid tic tac toe*/
+/*grid tic tac toe
+Author : Temmy Mahesa Ridwan
+*/
 void grid3();
 void grid5();
 void grid7();
 
-/*bila melawan komputer*/
+void persiapanGrid();
+void tampilkanGrid();
+
+/*bila melawan komputer
+Author : Temmy Mahesa Ridwan
+*/
 void gridCOM3();
 void gridCOM5();
 void gridCOM7();
 
-/* bila melawan player*/
+void computer(int x, int y);
+void mudah(int x, int y);
+void sedang();
+void sulit();
+
+/* bila melawan player
+Author : Temmy Mahesa Ridwan
+*/
 void gridVS3();
 void gridVS5();
 void gridVS7();
@@ -34,53 +56,63 @@ void gridVS7();
 void pemain1(int *i, int *j);
 void pemain2(int i, int j);
 
-/*proses ronde*/
+/*proses ronde
+Author : Temmy Mahesa Ridwan
+*/
 void giliran1();
 void giliran2();
 void giliran3();
 
-void computer(int x, int y);
-void mudah(int x, int y);
-void sedang();
-void sulit();
-
-void persiapanGrid();
-void tampilkanGrid();
+/*cek kolom, baris, diagonal agar computer tidak memiliki bug seperti menempatkan tanda ditempat yang sama*/
+/*Author : Temmy Mahesa RIdawn*/
 void barKos(int *i, int *j);
 void kolKos(int *i, int *j);
 void diagKanan(int *i, int *j);
 void diagKiri(int *i, int *j);
 
+/*Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
+bool cekGrid(int i, int j);
+bool cekPenuh();
+
+/*cek kolom, baris, diagonal untuk computer
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
 bool cekBarisX();
 bool cekKolomX();
 bool cekKanan();
 bool cekKiri();
 
-bool cekGrid(int i, int j);
-bool cekPenuh();
 
+/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 3 x 3
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
 bool deretBaris1();
 bool deretKolom1();
 bool deretDiag1();
 
+/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 5 x 5
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
 bool deretBaris2();
 bool deretKolom2();
 bool deretDiag2();
 
+/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 7 x 7
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
 bool deretBaris3();
 bool deretKolom3();
 bool deretDiag3();
 
-/*modul game over*/
+/*modul game over
+Author : Temmy Mahes Ridwan*/
 void tampilkanMenang1();
 void tampilkanMenang2();
 void tampilkanKalah();
 
-/*data highscore*/
+/*data highscore
+Author : Temmy Mahesa Ridwan*/
 int GetData();
 void writeData();
 
-/*timer*/
+/*timer
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
 int starttime();
 int endtime();
 
