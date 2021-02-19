@@ -13,9 +13,7 @@
 
 #define HIGHSCORE_FILENAME "scorehistory.dat"
 
-/* Modul Menu
-Author : Temmy Mahesa Ridwan
-*/
+/* Modul Menu*/
 void pilihGrid();
 void pilihMode();
 void pilihLevel();
@@ -24,9 +22,7 @@ void playTicTacToe();
 void namaPermainan();
 void scoreHistory();
 
-/*Modul Grid tic tac toe
-Author : Temmy Mahesa Ridwan
-*/
+/*Modul Grid tic tac toe*/
 void grid3();
 void grid5();
 void grid7();
@@ -34,9 +30,7 @@ void grid7();
 void persiapanGrid();
 void tampilkanGrid();
 
-/*Modul apabila melawan komputer
-Author : Temmy Mahesa Ridwan
-*/
+/*Modul apabila melawan komputer*/
 void gridCOM3();
 void gridCOM5();
 void gridCOM7();
@@ -46,9 +40,8 @@ void mudah(int x, int y);
 void sedang();
 void sulit();
 
-/*Modul apabila melawan player
-Author : Temmy Mahesa Ridwan
-*/
+/*Modul apabila melawan player*/
+
 void gridVS3();
 void gridVS5();
 void gridVS7();
@@ -56,58 +49,48 @@ void gridVS7();
 void pemain1(int *i, int *j);
 void pemain2(int i, int j);
 
-/*Modul proses ronde
-Author : Temmy Mahesa Ridwan
-*/
+/*Modul proses ronde*/
 void giliran1();
 void giliran2();
 void giliran3();
 
 /*Modul cek kolom, baris, diagonal agar computer tidak memiliki bug seperti menempatkan tanda ditempat yang sama*/
-/*Author : Temmy Mahesa RIdawn*/
 void barKos(int *i, int *j);
 void kolKos(int *i, int *j);
 void diagKanan(int *i, int *j);
 void diagKiri(int *i, int *j);
 
-/*Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
 bool cekGrid(int i, int j);
 bool cekPenuh();
 
-/*cek kolom, baris, diagonal untuk computer
-Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
+/*cek kolom, baris, diagonal untuk computer*/
 bool cekBarisX();
 bool cekKolomX();
 bool cekKanan();
 bool cekKiri();
 
 
-/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 3 x 3
-Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
+/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 3 x 3*/
 bool deretBaris1();
 bool deretKolom1();
 bool deretDiag1();
 
-/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 5 x 5
-Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
+/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 5 x 5*/
 bool deretBaris2();
 bool deretKolom2();
 bool deretDiag2();
 
-/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 7 x 7
-Author : Mochammad Daffa Faqiha Fawwaz Hanjowo*/
+/*untuk mengecek apakah sudah ada 1 deret baris atau  kolom atau diagonal di grid 7 x 7*/
 bool deretBaris3();
 bool deretKolom3();
 bool deretDiag3();
 
-/*modul game over
-Author : Temmy Mahes Ridwan*/
+/*modul game over*/
 void tampilkanMenang1();
 void tampilkanMenang2();
 void tampilkanKalah();
 
-/*data highscore
-Author : Temmy Mahesa Ridwan*/
+/*data highscore*/
 int GetData();
 void writeData();
 
@@ -130,6 +113,13 @@ int	player1, player2;
 int papan[8][8];
 HighscoreData data;
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo dan Temmy Mahesa Ridwan
+Deskripsi : badan program dimana awal - awal program di mulai
+I.S : program belum berjalan
+F.S : Program berhenti
+versi : 
+*/
 int main(){
 	int pilihmenu;
 menu :
@@ -183,6 +173,12 @@ menu :
 		}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : memberi nama Permainan untuk di salin ke score history
+I.S : variabel nama masih null / belum di kasih nama
+output: variable nama sudah di isi
+*/
 void namaPermainan(){
 	system("cls");
 	printf("(Maksimal 21 Karakter)\n");
@@ -191,6 +187,12 @@ void namaPermainan(){
 	pilihGrid();
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : untuk memilih grid yang akan di pakai
+I.S : variable grid belum di tentukan
+F.S : variable grid sudah di tentukan
+*/
 void pilihGrid(){
 	system("cls");
 	printf("========TIC TAC TOE========\n");
@@ -211,7 +213,12 @@ void pilihGrid(){
 	
 	
 }
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : memilih lawan, apakah bermain dengan komputer atau player 
+I.S : lawan belum di pilih
+F.S : lawan sudah di pilih
+*/
 void pilihMode(){
 	system("cls");
 	printf("========TIC TAC TOE========\n");
@@ -243,6 +250,12 @@ void pilihMode(){
 
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : bila melawan computer maka akan di tampilkan pilihan tingkatan level
+I.S : level computer belum di pilih
+F.S : level computer sudah di pilih
+*/
 void pilihLevel(){
 	system("cls");
 	printf("==============TIC TAC TOE================\n");
@@ -277,7 +290,12 @@ void pilihLevel(){
 			pilihLevel();
 	}
 }
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : memilih jumlah ronde yang akan di mainkan
+I.S : jumlah ronde belum di tentukan
+F.S : jumlah ronde sudah di tentukan
+*/
 void jumlahRonde(){
 	system("cls");
 	printf("========TIC TAC TOE========\n");
@@ -299,7 +317,12 @@ void jumlahRonde(){
 	}
 }
 
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : memulai memilah mengambil inputan dari pilihGrid
+I.S :  belum bermain
+F.S : bermain sesuai grid
+*/
 void playTicTacToe(){
 	if(g == 1){
 		grid3();
@@ -310,6 +333,12 @@ void playTicTacToe(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : pengeksekusian apakah bermain dengan computer atau player sesuai dengan inputan di pilih mode
+I.S : lawan belum di tentukan
+F.S : lawan sudah di tentukan
+*/
 void grid3(){
 	switch(m){
 		case 1:
@@ -321,13 +350,24 @@ void grid3(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : mempersiapkan grid lalu bermain
+I.S : grid belum siap, dan giliran belum di bagikan
+F.S : grid sudah siap tampil, giliran sudah di bagikan
+*/
 void gridCOM3(){
 	size = 4;
 	persiapanGrid();
 	giliran1();
 }
 
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : untuk mempersiapkan grid yang akan di pakai
+I.S : grid belum di siapkan
+F.S : grid sudah di siapkan
+*/
 void persiapanGrid(){
 	int i, j;
 	system("cls");
@@ -352,6 +392,14 @@ void persiapanGrid(){
 	}
 }
 
+
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kolom
+I.S : kolom belum di check
+F.S : kolom sudah di check
+output : false apabila 1 deret kolom terisi, dan true apa bila belum terisi
+*/
 bool deretKolom1(){
 	int i;
 	for (i = 1; i < size; i++){
@@ -364,6 +412,13 @@ bool deretKolom1(){
 	return true;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck baris
+I.S : baris belum di check
+F.S : baris sudah di check
+output : false apabila 1 deret baris terisi, dan true apa bila belum terisi
+*/
 bool deretBaris1(){
 	int i;
 	for (i = 1; i < size; i++){
@@ -375,7 +430,13 @@ bool deretBaris1(){
     }
     return true;
 }
-
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck diagonal
+I.S : diagonal belum di check
+F.S : diagonal sudah di check
+output : false apabila 1 deret diagonal terisi, dan true apa bila belum terisi
+*/
 bool deretDiag1(){
 	if ((papan[1][1]== 'X'&& papan[2][2]=='X'&& papan[3][3]=='X')||(papan[3][1]== 'X'&& papan[2][2]=='X'&& papan[1][3]=='X') ){
 		return false;
@@ -384,7 +445,13 @@ bool deretDiag1(){
 	}
 	return true;
 }
-
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengechec apakah kolom sudah di isi apa belum
+I.S : isi kolom belum di chekc
+F.S : isi kolom sudah di check
+output : akan di return false apabila angka == 9 sebalk nya false apabila != 9
+*/
 bool cekPenuh(){
 	int i, j, angka = 0;
 	bool penuh = true;
@@ -402,6 +469,14 @@ bool cekPenuh(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : proses pengeksekusian permainan untuk bermain, dan menentukan siapa yang menang dan kalah
+I.S : player1 dan player2( computer ) belum memasukan inputan, belum ada 1 deret di baris/kolom/diagonal, 
+	dan pemenang belum di tentukan
+F.S : player1, dan player2(computer) sudaj memasukan inputan, sudah ada salah 1 deret di baris/kolom/diagonal,
+	dan pemenang sudah ditentukan oleh banyak nya ronde permainan 
+*/
 void giliran1(){
 	int x=0, y=0;
 	player1=0; player2=0;
@@ -454,13 +529,24 @@ void giliran1(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : mempersiapkan grid lalu bermain
+I.S : grid belum siap, dan giliran belum di bagikan
+F.S : grid sudah siap tampil, giliran sudah di bagikan
+*/
 void gridVS3(){
 	size=4;
 	persiapanGrid();
 	giliran1();
 }
 
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : pengeksekusian apakah bermain dengan computer atau player sesuai dengan inputan di pilih mode
+I.S : lawan belum di tentukan
+F.S : lawan sudah di tentukan
+*/
 void grid5(){
 	switch(m){
 		case 1:
@@ -472,18 +558,37 @@ void grid5(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : mempersiapkan grid lalu bermain
+I.S : grid belum siap, dan giliran belum di bagikan
+F.S : grid sudah siap tampil, giliran sudah di bagikan
+*/
 void gridCOM5(){
 	size=6;
 	persiapanGrid();
 	giliran2();
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : mempersiapkan grid lalu bermain
+I.S : grid belum siap, dan giliran belum di bagikan
+F.S : grid sudah siap tampil, giliran sudah di bagikan
+*/
 void gridVS5(){
 	size=6;
 	persiapanGrid();
 	giliran2();
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck baris
+I.S : baris belum di check
+F.S : baris sudah di check
+output : false apabila 1 deret baris terisi, dan true apa bila belum terisi
+*/
 bool deretBaris2(){
 	int i;
 	for (i = 1; i < size; i++){
@@ -496,6 +601,13 @@ bool deretBaris2(){
 	return true;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kolom
+I.S : kolom belum di check
+F.S : kolom sudah di check
+output : false apabila 1 deret kolom terisi, dan true apa bila belum terisi
+*/
 bool deretKolom2(){
 	int i;
 	for (i = 1; i < size; i++){
@@ -508,6 +620,13 @@ bool deretKolom2(){
 	return true;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck diagonal
+I.S : diagonal belum di check
+F.S : diagonal sudah di check
+output : false apabila 1 deret diagonal terisi, dan true apa bila belum terisi
+*/
 bool deretDiag2(){
 	if ((papan[1][1]== 'X'&& papan[2][2]=='X'&& papan[3][3]=='X'&&papan[4][4]=='X')||(papan[4][1]=='X'&&papan[3][2]== 'X'&& papan[2][3]=='X'&&papan[1][4]=='X')){
 		return false;
@@ -517,6 +636,14 @@ bool deretDiag2(){
 	return true;
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : proses pengeksekusian permainan untuk bermain, dan menentukan siapa yang menang dan kalah
+I.S : player1 dan player2( computer ) belum memasukan inputan, belum ada 1 deret di baris/kolom/diagonal, 
+	dan pemenang belum di tentukan
+F.S : player1, dan player2(computer) sudaj memasukan inputan, sudah ada salah 1 deret di baris/kolom/diagonal,
+	dan pemenang sudah ditentukan oleh banyak nya ronde permainan 
+*/
 void giliran2(){
 	int x=0, y=0;
 	player1=0; player2=0;
@@ -569,6 +696,12 @@ void giliran2(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : pengeksekusian apakah bermain dengan computer atau player sesuai dengan inputan di pilih mode
+I.S : lawan belum di tentukan
+F.S : lawan sudah di tentukan
+*/
 void grid7(){
 	switch(m){
 		case 1:
@@ -580,18 +713,36 @@ void grid7(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : mempersiapkan grid lalu bermain
+I.S : grid belum siap, dan giliran belum di bagikan
+F.S : grid sudah siap tampil, giliran sudah di bagikan
+*/
 void gridCOM7(){
 	size=8;
 	persiapanGrid();
 	giliran3();
 }
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : mempersiapkan grid lalu bermain
+I.S : grid belum siap, dan giliran belum di bagikan
+F.S : grid sudah siap tampil, giliran sudah di bagikan
+*/
 void gridVS7(){
 	size=8;
 	persiapanGrid();
 	giliran3();
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kolom
+I.S : kolom belum di check
+F.S : kolom sudah di check
+output : false apabila 1 deret kolom terisi, dan true apa bila belum terisi
+*/
 bool deretKolom3(){
 	int i;
 	for(i = 1; i<size; i++){
@@ -603,6 +754,13 @@ bool deretKolom3(){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck baris
+I.S : baris belum di check
+F.S : baris sudah di check
+output : false apabila 1 deret baris terisi, dan true apa bila belum terisi
+*/
 bool deretBaris3(){
 	int i;
 	for(i = 1; i < size; i++){
@@ -615,6 +773,13 @@ bool deretBaris3(){
 	return true;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck diagonal
+I.S : diagonal belum di check
+F.S : diagonal sudah di check
+output : false apabila 1 deret diagonal terisi, dan true apa bila belum terisi
+*/
 bool deretDiag3(){
 	if ((papan[1][1]== 'X'&& papan[2][2]=='X'&& papan[3][3]=='X'&&papan[4][4]=='X'&&papan[5][5]=='X')||(papan[5][1]== 'X'&& papan[4][2]=='X'&& papan[3][3]=='X'&& papan[2][4]=='X'&& papan[1][5]=='X')){
 		return false;
@@ -624,6 +789,14 @@ bool deretDiag3(){
 	return true;
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : proses pengeksekusian permainan untuk bermain, dan menentukan siapa yang menang dan kalah
+I.S : player1 dan player2( computer ) belum memasukan inputan, belum ada 1 deret di baris/kolom/diagonal, 
+	dan pemenang belum di tentukan
+F.S : player1, dan player2(computer) sudaj memasukan inputan, sudah ada salah 1 deret di baris/kolom/diagonal,
+	dan pemenang sudah ditentukan oleh banyak nya ronde permainan 
+*/
 void giliran3(){
 	int x=0, y=0;
 	player1=0; player2=0;
@@ -676,6 +849,12 @@ void giliran3(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : untuk menampilkan grid dilayar setelah dan sebelum di inputkan dari player 1 dan 2
+I.S : grid belum di tampilkan
+F.S : grid sudah di tampilkan
+*/
 void tampilkanGrid(){
 	int i, j;
 	printf("~| Score player 1 : %d     -=-=-     %d : Score player 2 |~\n", player1, player2);
@@ -687,6 +866,14 @@ void tampilkanGrid(){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : untuk mengecheck kekosongan pada kolom tertentu
+I.S : belum di check
+F.S : sudah di check
+input : mendapatkan input dari modul pemain1,pemain2
+output : true apabila kosong, dan false apa bila sudah di isi
+*/
 bool cekGrid(int i, int j){
 	if (papan[i][j]=='#'){
 		return true;
@@ -695,6 +882,13 @@ bool cekGrid(int i, int j){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : proses pengeksekusian inputan dari player 1
+I.S : inputan player 1 belum di masukan 
+F.S : apabila inputan player 1 sudah di pilih dalam waktu kurang dari 10 detik maka bisa terisi 
+	dan apabila memilih lebih dari 10 detik giliran di lempar ke player 2(lawan)
+*/
 void pemain1(int *i, int *j){
 	int x, y, timer;
 	double setTimer;
@@ -719,6 +913,13 @@ void pemain1(int *i, int *j){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : proses pengeksekusian inputan dari player 2
+I.S : inputan player 2 belum di masukan 
+F.S : apabila inputan player 2 sudah di pilih dalam waktu kurang dari 10 detik maka bisa terisi 
+	dan apabila memilih lebih dari 10 detik giliran di lempar ke player 1(lawan)
+*/
 void pemain2(int i, int j){
 	int x, y, timer;
 	double setTimer;
@@ -743,6 +944,12 @@ void pemain2(int i, int j){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo dan Temmy Mahesa Ridwan
+Deskripsi : menentukan level computer yang akan di lawan
+I.S : level computer belum di tentukan
+F.S : level computer sudah di tentukan
+*/
 void computer(int x, int y){
 	int a = x;
 	int b = y;
@@ -760,6 +967,13 @@ void computer(int x, int y){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : cara kerja computer level mudah 
+I.S : computer belum mengisi kolom
+F.S : computer sudah mengisi kolom di kanan atau di bawah atau di kiri atau di atas tanda player 1 (X)
+	apabila sudah terisi semua maka akan di random
+*/
 void mudah(int x, int y){
 	int i, j;
 	
@@ -768,7 +982,7 @@ void mudah(int x, int y){
 	}else if(papan[x+1][y] == '#'){
 		papan[x+1][y] = 'O';
 	}else if(papan[x][y-1] == '#'){
-		papan[x+1][y] = 'O';
+		papan[x][y-1] = 'O';
 	}else if(papan[x-1][y] == '#'){
 		papan[x-1][y] = 'O';
 	}else{
@@ -782,7 +996,12 @@ void mudah(int x, int y){
 		}
 	}
 }
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : cara kerja computer level sedang
+I.S : computer belum mengisi kolom
+F.S : computer sudah menigisi kolom secara acak
+*/
 void sedang(){
 	int i, j;
 	i = rand()%size+1;
@@ -794,7 +1013,13 @@ void sedang(){
 		sedang();
 	}
 }
-
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : cara kerja computer level sulit
+I.S : computer belum mengisi kolom
+F.S : computer sudah mengisi kolom di tengah atau mengecheck ke semua kolom, baris, dan diagonal, 
+	apa bila belum ada yang true maka akan di acak
+*/
 void sulit(){
 	int i=size/2;
 	int j=size/2;
@@ -846,6 +1071,13 @@ void sulit(){
 		i = 0;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : untuk mengecheck baris 
+I.S : semua baris belum ada yang di check
+F.S : semua baris sudah di check
+output : true bila count == size -2, apabila tidak maka nilainya false
+*/
 bool cekBarisX(){
 	int i, j, count=0;
 	bool barPenuh = true;
@@ -863,6 +1095,13 @@ bool cekBarisX(){
 	return false;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : untuk mengecheck kolom
+I.S : semua kolom belum ada yang di check
+F.S : semua kolom  sudah di check
+output : true bila count == size -2, apabila tidak maka nilainya false
+*/
 bool cekKolomX(){
 	int i, j, count=0;
 	for(i=1; i < size; i++){
@@ -879,6 +1118,13 @@ bool cekKolomX(){
 	return false;
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : untuk mengecheck diagonal dari arah kanan
+I.S : diagonal dari arah kanan belum ada yang di check
+F.S : diagobal dari arah kanan sudah di check
+output : true bila count == size -2, apabila tidak maka nilainya false
+*/
 bool cekKanan(){
 	int i, j, count=0;
 	for (i=1; i < size; i++){
@@ -896,6 +1142,13 @@ bool cekKanan(){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : untuk mengecheck diagonal dari arah kiri
+I.S : diagonal dari arah kiri belum ada yang di check
+F.S : diagobal dari arah kiri sudah di check
+output : true bila count == size -2, apabila tidak maka nilainya false
+*/
 bool cekKiri(){
 	int i, j, count=0;
 	for (i=1; i < size; i++){
@@ -913,6 +1166,12 @@ bool cekKiri(){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kekosongan di deret baris
+I.S : baris belum di check
+F.S : baris sudah di check
+*/
 void barKos(int *i, int *j){
 	int x, y;
 	bool terisi = true;
@@ -928,6 +1187,12 @@ void barKos(int *i, int *j){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kekosongan di deret kolom
+I.S : kolom belum di check
+F.S : kolom sudah di check
+*/
 void kolKos(int *i, int *j){
 	int x, y;
 	bool terisi = true;
@@ -943,6 +1208,12 @@ void kolKos(int *i, int *j){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kekosongan di deret diagonal arah kanan
+I.S : diagonal dari kanan belum di check
+F.S : diagonal dari kanan sudah di check
+*/
 void diagKanan(int *i, int *j){
 	int x, y, count = 0;
 	bool terisi = true;
@@ -958,6 +1229,12 @@ void diagKanan(int *i, int *j){
 	}
 }
 
+/*
+Author : Mochammad Daffa Faqiha Fawwaz Hanjowo 
+Deskripsi : mengecheck kekosongan di deret diagonal arah kiri
+I.S : diagonal dari kiri belum di check
+F.S : diagonal dari kiri sudah di check
+*/
 void diagKiri(int *i, int *j){
 	int x,y;
 	bool terisi = true;
@@ -971,6 +1248,14 @@ void diagKiri(int *i, int *j){
 		}
 	}
 }
+
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : menampilkan pemenang apabila player 1 menang
+I.S : layar belum ada apa apa 
+F.S : layar terdapat pengucapat selamat kepada player 1 
+	dan memberi kesempatan untuk memainkan permainannya lagi atau keluar dari program
+*/
 
 void tampilkanMenang1(){
 	system("cls");
@@ -992,6 +1277,13 @@ void tampilkanMenang1(){
 	
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : menampilkan pemenang apabila player 2 menang
+I.S : layar belum ada apa apa 
+F.S : layar terdapat pengucapat selamat kepada player 2 
+	dan memberi kesempatan untuk memainkan permainannya lagi atau keluar dari program
+*/
 void tampilkanMenang2(){
 	system("cls");
 	printf(" SELAMAT PLAYER 2 ANDA MEMENANGKAN PERMAINAN !!\n");
@@ -1011,6 +1303,13 @@ void tampilkanMenang2(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : menampilkan kalah apabila computer menang
+I.S : layar belum ada apa apa 
+F.S : layar terdapat sebuah kata kata yang membuat player untuk tidak menyerah
+	dan memberi kesempatan untuk memainkan permainannya lagi atau keluar dari program
+*/
 void tampilkanKalah(){
 	system("cls");
 	printf("WA HA HA HA SAYANG SEKALI ANDA KALAH !\n");
@@ -1030,6 +1329,12 @@ void tampilkanKalah(){
 	}
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : untuk menampilkan score history 
+I.S : score history belum di tampilkan
+F.S : score history sudah di tampilkan
+*/
 void scoreHistory (){
 
 	int i,N;
@@ -1048,7 +1353,12 @@ void scoreHistory (){
 	
 	system("pause");
 }
-
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : untuk mengambil data yang ada di dalam file 
+I.S : data belum di ambil dari file 
+F.S : data sudah di ambil dari file
+*/
 int GetData(){
 	int N = 0;
 	FILE *fp = fopen(HIGHSCORE_FILENAME, "rb");
@@ -1057,6 +1367,12 @@ int GetData(){
 	return N;
 }
 
+/*
+Author : Temmy Mahesa Ridwan
+Deskripsi : untuk menulis data permainan ke dalam file 
+I.S : file belum di salin dan di tulis ke file
+F.S : file sudah di salin dan di tulis ke file
+*/
 void writeData(){
 
 	strcpy(data.namaGame,nama);
